@@ -44,7 +44,7 @@
 }
 
 /* Center WebView Styling */
-.web-view {
+.center {
     -fx-background-color: #ffffff;
     -fx-border-color: #d0d0d0;
     -fx-border-width: 1px;
