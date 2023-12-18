@@ -1,0 +1,66 @@
+.root {
+    -fx-font-family: 'Segoe UI', sans-serif;
+    -fx-background-color: #f0f0f0;
+}
+
+
+/* Top Search Bar Styling */
+.top-bar {
+    -fx-spacing: 10;
+    -fx-padding: 10;
+    -fx-background-color: #e0e0e0;
+    -fx-alignment: CENTER_LEFT;
+    -fx-effect: innershadow(gaussian, #a8a8a8, 5, 0.0, 0, 2);
+}
+/* Top Search Bar Styling */
+.top-bar Label {
+    -fx-text-fill: #0a84ff; /* Dark blue text color */
+     -fx-font-size: 17px;
+}
+
+
+
+.top-bar TextField {
+    -fx-font-size: 14px;
+    -fx-padding: 8px 12px;
+    -fx-background-color: #d0d0d0;
+    -fx-border-radius: 5px;
+    -fx-border-color: transparent;
+    -fx-effect: dropshadow(gaussian, #808080, 3, 0.0, 0, 1);
+}
+/* Top Search Bar Styling */
+.top-bar Button {
+    -fx-font-size: 14px;
+    -fx-padding: 8px 12px;
+    -fx-background-color: #4285f4; /* Blue background color */
+    -fx-text-fill: white; /* White text color */
+    -fx-border-radius: 5px;
+    -fx-border-color: transparent;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.15), 5, 0.0, 0, 1);
+}
+
+.top-bar Button:hover {
+    -fx-background-color: #3b73c7; /* Darker blue on hover */
+}
+
+/* Center WebView Styling */
+.web-view {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #d0d0d0;
+    -fx-border-width: 1px;
+    -fx-border-radius: 5px;
+    -fx-effect: dropshadow(gaussian, #a0a0a0, 3, 0.0, 0, 1);
+}
+
+/* Bottom Weather Display Styling */
+.weather-display {
+    -fx-font-size: 17px;
+    -fx-padding: 10px;
+    -fx-background-color: #ffffff;
+    -fx-border-color: #d0d0d0;
+    -fx-border-width: 1px;
+    -fx-border-radius: 5px;
+    -fx-effect: dropshadow(gaussian, #a0a0a0, 3, 0.0, 0, 1);
+    -fx-pref-width: 200px;
+     -fx-pref-height: 100px;
+}

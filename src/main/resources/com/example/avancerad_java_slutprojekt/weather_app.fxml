@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.web.*?>
+
+<?import java.net.URL?>
+
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.avancerad_java_slutprojekt.WeatherController">
+    <!-- Include reference to the CSS file -->
+    <stylesheets>
+        <URL value="@styles.css" />
+    </stylesheets>
+
+
+
+    <top>
+        <HBox spacing="10" styleClass="top-bar">
+            <Label text="Enter Location:"/>
+            <TextField fx:id="locationField"/>
+            <Button text="Search" onAction="#handleSearch"/>
+        </HBox>
+    </top>
+
+    <center>
+        <WebView fx:id="webView" styleClass="web-View"/>
+    </center>
+
+    <bottom>
+        <TextArea fx:id="weatherDisplay" editable="false" styleClass="weather-display"/>
+    </bottom>
+
+</BorderPane>
