@@ -5,17 +5,16 @@
 <?import javafx.scene.web.*?>
 
 <?import java.net.URL?>
-
+<!-- root element -->
+<!--specifies the XML namespaces and the controller class for the FXML file-->
 <BorderPane xmlns="http://javafx.com/javafx"
             xmlns:fx="http://javafx.com/fxml"
             fx:controller="com.example.avancerad_java_slutprojekt.WeatherController">
-    <!-- Include reference to the CSS file -->
+    <!-- Include reference to the CSS file for styling the UI components -->
     <stylesheets>
         <URL value="@styles.css" />
     </stylesheets>
-
-
-
+    <!--entering and searching a location.-->
     <top>
         <HBox spacing="10" styleClass="top-bar">
             <Label text="Enter Location:"/>
@@ -23,11 +22,11 @@
             <Button text="Search" onAction="#handleSearch"/>
         </HBox>
     </top>
-
+    <!-- for displaying webView /map -->
     <center>
         <WebView fx:id="webView"/>
     </center>
-
+    <!-- for displaying weather information -->
     <bottom>
         <TextArea fx:id="weatherDisplay" editable="false" styleClass="weather-display"/>
     </bottom>

@@ -1,66 +1,72 @@
+/* to style the root element of the UI */
 .root {
-    -fx-font-family: 'Segoe UI', sans-serif;
-    -fx-background-color: #f0f0f0;
+    -fx-font-family: Arial;
+    -fx-background-color: linear-gradient(to bottom right, #ffcc00, #ff6600, #00ccff, #9933ff); /* Colorful linear gradient */
 }
-
 
 /* Top Search Bar Styling */
 .top-bar {
     -fx-spacing: 10;
     -fx-padding: 10;
-    -fx-background-color: #e0e0e0;
+    -fx-background-color: linear-gradient(to bottom,#eda8d6, #9dbaf5, #a0ebb9); /* Colorful linear gradient */
     -fx-alignment: CENTER_LEFT;
     -fx-effect: innershadow(gaussian, #a8a8a8, 5, 0.0, 0, 2);
 }
-/* Top Search Bar Styling */
+
+/* Top Search Bar Label Styling */
 .top-bar Label {
-    -fx-text-fill: #0a84ff; /* Dark blue text color */
-     -fx-font-size: 17px;
+    -fx-text-fill: black;
+    -fx-font-size: 20px;
+    -fx-font-weight:bold;
 }
-
-
-
+/* Top Search textField Styling */
 .top-bar TextField {
-    -fx-font-size: 14px;
-    -fx-padding: 8px 12px;
-    -fx-background-color: #d0d0d0;
+    -fx-font-size: 20px;
+     -fx-text-fill: black;
+     -fx-padding: 8px 12px;
+    -fx-background-color: linear-gradient(to bottom, #ffd466, #8edff5); /* Colorful linear gradient */
     -fx-border-radius: 5px;
     -fx-border-color: transparent;
     -fx-effect: dropshadow(gaussian, #808080, 3, 0.0, 0, 1);
 }
-/* Top Search Bar Styling */
+
+/* Top Search Bar button Styling */
 .top-bar Button {
-    -fx-font-size: 14px;
+    -fx-font-size: 17px;
+    -fx-font-weight:bold;
     -fx-padding: 8px 12px;
-    -fx-background-color: #4285f4; /* Blue background color */
-    -fx-text-fill: white; /* White text color */
+    -fx-background-color: linear-gradient(to bottom, #79baf2, #9dc2e3, #76e2e8); /* Colorful linear gradient */
+    -fx-text-fill: black;
     -fx-border-radius: 5px;
     -fx-border-color: transparent;
     -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.15), 5, 0.0, 0, 1);
 }
 
 .top-bar Button:hover {
-    -fx-background-color: #3b73c7; /* Darker blue on hover */
+    -fx-background-color: linear-gradient(to bottom, #94a7e0,#9568ed); /* Darker blue to purple on hover */
+    -fx-text-fill: blue;
 }
 
 /* Center WebView Styling */
-.center {
+/*.center {
     -fx-background-color: #ffffff;
-    -fx-border-color: #d0d0d0;
+    -fx-border-color: #ed7b7b;
     -fx-border-width: 1px;
     -fx-border-radius: 5px;
     -fx-effect: dropshadow(gaussian, #a0a0a0, 3, 0.0, 0, 1);
-}
+}*/
 
 /* Bottom Weather Display Styling */
 .weather-display {
-    -fx-font-size: 17px;
+    -fx-font-size: 15px;
+    -fx-font-weight:bold;
+    -fx-text-fill:#2b1275;
     -fx-padding: 10px;
-    -fx-background-color: #ffffff;
+    -fx-background-color: linear-gradient(to bottom,#eda8d6, #9dbaf5, #a0ebb9); /* Colorful linear gradient */
     -fx-border-color: #d0d0d0;
     -fx-border-width: 1px;
     -fx-border-radius: 5px;
     -fx-effect: dropshadow(gaussian, #a0a0a0, 3, 0.0, 0, 1);
     -fx-pref-width: 200px;
-     -fx-pref-height: 100px;
+    -fx-pref-height: 130px;
 }
